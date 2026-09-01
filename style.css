@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b14;
+    color: white;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 75px;
+    background: #11111f;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid #292942;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #8f5cff;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(10, 10, 20, 0.75),
+        rgba(10, 10, 20, 0.95)),
+        url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #8f5cff;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #cccccc;
+    margin-bottom: 35px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn,
+.small-btn,
+.submit-btn {
+    display: inline-block;
+
+    background: #8f5cff;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn {
+    padding: 14px 30px;
+    font-size: 17px;
+}
+
+.small-btn {
+    padding: 10px 18px;
+    margin-top: 12px;
+}
+
+.btn:hover,
+.small-btn:hover,
+.submit-btn:hover {
+    background: #7040d9;
+    transform: translateY(-2px);
+}
+
+
+/* ================= SECTIONS ================= */
+
+.featured,
+.games-section,
+.about-section,
+.feedback-section {
+    padding: 70px 7%;
+}
+
+.featured h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+/* ================= PAGE TITLE ================= */
+
+.page-title {
+    text-align: center;
+    padding: 80px 20px 50px;
+
+    background: #10101d;
+}
+
+.page-title h1 {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.page-title p {
+    color: #aaaaaa;
+    font-size: 17px;
+}
+
+
+/* ================= GAME CARDS ================= */
+
+.game-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+.game-card {
+    background: #151525;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #292942;
+
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: #8f5cff;
+}
+
+.game-card img {
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.category {
+    display: inline-block;
+
+    background: #282044;
+    color: #a98aff;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+
+    text-align: center;
+
+    background: #151525;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    border: 1px solid #292942;
+}
+
+.about-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    color: #bbbbbb;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.feature-box {
+    text-align: center;
+
+    background: #151525;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    border: 1px solid #292942;
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+
+/* ================= FEEDBACK ================= */
+
+.feedback-section {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-form {
+    width: 100%;
+    max-width: 650px;
+
+    background: #151525;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    border: 1px solid #292942;
+}
+
+.feedback-form label {
+    display: block;
+
+    margin-bottom: 8px;
+    margin-top: 18px;
+
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    background: #0d0d18;
+
+    border: 1px solid #34344d;
+
+    border-radius: 5px;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: #8f5cff;
+}
+
+.rating {
+    display: flex;
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 10px;
+}
+
+.rating label {
+    margin: 0;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+.rating input {
+    width: auto;
+    margin-right: 4px;
+}
+
+.submit-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 25px;
+
+    font-size: 16px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #11111f;
+
+    color: #888888;
+
+    border-top: 1px solid #292942;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .page-title h1 {
+        font-size: 35px;
+    }
+
+    .featured,
+    .games-section,
+    .about-section,
+    .feedback-section {
+        padding: 50px 5%;
+    }
+}

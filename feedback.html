@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🎮 GameHub</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="about.html">About</a>
+            <a href="feedback.html" class="active">Feedback</a>
+        </nav>
+    </header>
+
+
+    <section class="page-title">
+        <h1>Feedback</h1>
+        <p>We would love to hear from you!</p>
+    </section>
+
+
+    <section class="feedback-section">
+
+        <form class="feedback-form">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+
+            <label for="game">Favorite Game</label>
+
+            <select id="game">
+                <option value="">Select a game</option>
+                <option>Battle Arena</option>
+                <option>Mystic Land</option>
+                <option>Pixel Quest</option>
+                <option>Racing X</option>
+            </select>
+
+
+            <label>How would you rate GameHub?</label>
+
+            <div class="rating">
+                <label>
+                    <input type="radio" name="rating" value="1">
+                    ⭐
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="2">
+                    ⭐⭐
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="3">
+                    ⭐⭐⭐
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="4">
+                    ⭐⭐⭐⭐
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="5">
+                    ⭐⭐⭐⭐⭐
+                </label>
+            </div>
+
+
+            <label for="message">Your Feedback</label>
+
+            <textarea id="message"
+                      rows="6"
+                      placeholder="Write your feedback here..."
+                      required></textarea>
+
+
+            <button type="submit" class="submit-btn">
+                Submit Feedback
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 GameHub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
